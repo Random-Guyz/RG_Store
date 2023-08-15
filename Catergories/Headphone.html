@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="uff-8">
+    <title>
+        shopping Website
+    </title>
+    <meta name="viewport"
+        content="width=device-width, height=device-height,  initial-scale=1.0, user-scalable=no;user-scalable=0;" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            transition: 0.4s;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        .glass {
+            min-width: 350px;
+            height: 400px;
+            margin: 200px auto;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba (255, 255, 255, 0));
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            padding: 10px;
+            margin-left: -25px;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+            /* background-color: red; */
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .col-2 {
+            flex-basis: 50px;
+            min-width: 300px;
+            background-color: violet;
+
+        }
+
+        .col-2 img {
+            display: inline-block;
+            width: 40%;
+            padding: 100px 0;
+            height: 580px;
+            background-color: gray;
+            margin-left: 100px;
+        }
+
+        .col-2 h1 {
+            font-size: 50px;
+            line-height: 60px;
+            margin: 25px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #f03f28;
+            color: #fff;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 30px;
+            transition: background 0.5s;
+        }
+
+        .btn:hover {
+            background: #563434;
+        }
+
+        .header {
+            background-color: #c1cc40;
+            z-index: 0;
+        }
+
+        .header .row {
+            margin-top: 70px;
+        }
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 30px;
+            margin: 0;
+            padding-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .gallery {
+            display: inline-flexbox;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
+            background-color: rgb(244, 149, 165);
+            padding-left: 15%;
+        }
+
+        .content {
+            width: 20%;
+            margin: 15px;
+            box-sizing: border-box;
+            float: left;
+            text-align: center;
+            border-radius: 20px;
+            cursor: pointer;
+            padding-top: 10px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0, 25), 0 10px 10px rgba(0, 0, 0, 0, 22);
+            transition: .4s;
+        }
+
+        .maincontainer {
+            position: relative;
+            width: 200px;
+            height: 250px;
+        }
+
+        .card {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.5s ease;
+        }
+
+        .front {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background-color: red;
+            color: white;
+            text-align: center;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transform: rotateY(180deg);
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+
+
+        img {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+        }
+
+        p {
+            text-align: center;
+            color: #b2bec3;
+            padding-top: 0 8px;
+
+        }
+
+        h6 {
+            font-size: 26px;
+            text-align: center;
+            color: #222f3e;
+            margin: 0;
+
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+
+
+        }
+
+        li {
+
+            padding: 5px;
+        }
+
+        .checked {
+            color: #f3ca13fd;
+        }
+
+        button {
+            text-align: center;
+            font-size: 24px;
+            color: #fff;
+            width: 100%;
+            padding: 15px;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            margin-top: 5px;
+            border-radius: 20px;
+        }
+
+        .buy-5 {
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0, 0.2);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            z-index: 1;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-decoration: none;
+            overflow: hidden;
+            transition: 0.5s;
+            backdrop-filter: blur(40px);
+
+        }
+
+        .buy-5:hover a {
+            letter-spacing: 3px;
+        }
+
+        .buy-5 a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+            transform: skew(45deg) translateX(0);
+            transition: 0.5s;
+        }
+
+        .buy-5.buy-5:hover a::before {
+            transform: skew(45deg) translateX(200%);
+        }
+
+        @media(max-width:1000px) {
+            .content {
+                width: 45px;
+            }
+        }
+
+        @media(max-width:750px) {
+            .content {
+                width: 100%;
+            }
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .col-5 {
+            flex-basis: 50px;
+            min-width: 300px;
+        }
+
+        p {
+            color: #c70c0c;
+        }
+
+        .col-5 img {
+            width: 100%;
+            padding: 90px 0;
+            height: 50%;
+        }
+
+        .col-5 h1 {
+            font-size: 50px;
+            line-height: 60px;
+            margin: 25px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ee2727;
+            color: #fff;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 30px;
+            transition: background 0.5s;
+        }
+
+        .btn:hover {
+            background: #563434;
+        }
+
+        .header {
+
+            background-color: grey;
+        }
+
+        .header .row {
+            margin-top: 70px;
+        }
+
+        /* navbar */
+        .logo img {
+            margin: 0px 0px 0px 20px;
+            position: absolute;
+            width: 65px;
+            top: -5%;
+            height: 60px;
+        }
+
+        .logo {
+            cursor: pointer;
+        }
+
+
+        .menu_btn {
+            position: absolute;
+            left: 1%;
+            top: 12%;
+            height: 40px;
+            width: 45px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            transition: .4s ease;
+            z-index: 9;
+        }
+
+        /* side menu  */
+
+        .side-menu {
+            display: none;
+            position: absolute;
+            width: 50%;
+            height: 150vh;
+            background-color: rgba(0, 0, 0, 0.6);
+            left: -80%;
+            backdrop-filter: blur(15px);
+            z-index: 8;
+            /* transition: 0.4s ease; */
+        }
+
+        .side-atv {
+            display: block;
+            left: 0%;
+            transition: left 0.4s ease;
+        }
+
+        .side-menu ul {
+            position: absolute;
+            display: block;
+            margin: 20px 0px 0px 50px;
+            top: 10%;
+        }
+
+        .side-menu li {
+            text-align: center;
+            cursor: pointer;
+            font-size: 3.5em;
+            margin-top: 200px;
+            border-bottom: 4px solid #fff;
+            width: 100%;
+        }
+
+        .side-menu li a {
+            font-weight: 600;
+            padding: 12px;
+            margin: 40px;
+            border-radius: 8px;
+            color: #fff;
+
+        }
+
+        .line::before {
+            content: '';
+            position: absolute;
+            background-color: #fff;
+            top: -250%;
+            height: 4px;
+            width: 35px;
+            transition: .4s ease;
+            border-radius: 4px;
+        }
+
+        .line {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            height: 4px;
+            width: 35px;
+            transition: .4s ease;
+            border-radius: 4px;
+        }
+
+        .line::after {
+            content: '';
+            position: absolute;
+            background-color: #fff;
+            top: 250%;
+            height: 4px;
+            width: 35px;
+            transition: .4s ease;
+            border-radius: 4px;
+        }
+
+        .active {
+            transform: translateX(-90%);
+            transition: .4s ease;
+            background: transparent;
+            border-radius: 4px;
+        }
+
+        .active::before {
+            content: '';
+            position: absolute;
+            background-color: #fff;
+            top: -250%;
+            height: 4px;
+            width: 35px;
+            transition: .4s ease;
+            border-radius: 4px;
+            transform: translateX(90%);
+            transform: rotate(45deg) translate(31px, -16px);
+        }
+
+        .active::after {
+            content: '';
+            position: absolute;
+            background-color: #fff;
+            top: -250%;
+            height: 4px;
+            width: 35px;
+            transition: .4s ease;
+            border-radius: 4px;
+            transform: rotate(-45deg) translate(15px, 30px);
+        }
+
+
+        nav {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: fixed;
+            top: 0;
+            z-index: 9;
+            box-shadow: 0px 2px 6px 1px var(--shadow-clr);
+            backdrop-filter: blur(15px);
+        }
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        li {
+            margin: 10px 30px 10px 0px;
+            list-style-type: none;
+        }
+
+        li a {
+            text-decoration: none;
+        }
+
+        #search-box {
+            outline: none;
+            border: 2px solid var(--border);
+            padding: 5px;
+            border-radius: 16px;
+            margin-right: -10px;
+        }
+
+        li img {
+            width: 25px;
+            height: 25px;
+        }
+
+        @media only screen and (max-width: 1200px) {
+
+            nav {
+                display: flex;
+                width: 100%;
+                height: 5%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                box-shadow: 0px 1px 6px 0px var(--shadow-clr);
+            }
+
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            li {
+                margin: 5px 0px 10px 0px;
+            }
+
+            li img {
+                width: 20px;
+                margin: 10px;
+                margin-top: 20px;
+            }
+
+            .logo {
+                display: none;
+            }
+
+            .menu_btn {
+                position: absolute;
+                left: 0%;
+                top: -55%;
+                height: 75px;
+                width: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: .4s ease;
+                z-index: 9;
+            }
+
+            .line::before {
+                content: '';
+                height: 3px;
+                width: 20px;
+            }
+
+            .line {
+                display: block;
+                height: 3px;
+                width: 20px;
+            }
+
+            .line::after {
+                content: '';
+                height: 3px;
+                width: 20px;
+            }
+
+            .side-menu {
+                position: absolute;
+                width: 60%;
+                height: 100vh;
+            }
+
+            .side-menu li a {
+                font-weight: 600;
+                padding: 12px;
+                margin: 40px;
+                border-radius: 8px;
+                color: #fff;
+            }
+
+            #search-box {
+                outline: none;
+                border: none;
+                padding: 2px;
+                width: 50%;
+                border-radius: 16px;
+                margin-top: 5px;
+                margin-left: 110px;
+            }
+
+            .side-menu {
+                position: absolute;
+                width: 60%;
+                height: 200vh;
+            }
+
+            .side-atv {
+                display: block;
+                left: 0%;
+                transition: left 0.4s ease;
+            }
+
+            .side-menu ul {
+                position: absolute;
+                top: 50%;
+                display: block;
+                margin: 0px 0px 0px 50px;
+            }
+
+            .side-menu li {
+                text-align: center;
+                cursor: pointer;
+                font-size: 3.5em;
+                margin-top: 30px;
+                border-bottom: 4px solid #fff;
+                width: 100%;
+            }
+
+            .side-menu li a {
+                text-decoration: none;
+                font-weight: 600;
+                padding: 0px;
+                margin: 10px;
+                border-radius: 8px;
+                color: #fff;
+                font-size: .3em;
+            }
+        }
+
+
+        /* footer  */
+        footer {
+            width: 100%;
+            position: bottom;
+            bottom: 0;
+            background: linear-gradient(to right, #031264, #2d0b00);
+            color: #fff;
+            padding: 100px 0 30px;
+            border-top-left-radius: 125px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        footer p {
+            align-content: center;
+        }
+
+        .row {
+            width: 85%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .col {
+            flex-basis: 25%;
+            padding: 10px;
+        }
+
+        .col h3 {
+            width: fit-content;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .email-id {
+            width: fit-content;
+            border-bottom: 1px solid #ccc;
+            margin: 20px 0;
+
+        }
+
+        ul li {
+            list-style: none;
+            margin-bottom: 12px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .social_icon {
+            width: fit-content;
+            margin-bottom: 40px;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+
+        .social_icon li {
+            list-style: none;
+        }
+
+        .social_icon li a {
+            font-size: 2em;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transform: 0.5s;
+        }
+
+        .social_icon li a:hover {
+            transform: translate(-10px);
+
+        }
+
+        .underline {
+            width: 100%;
+            height: 5px;
+            background: #767676;
+            border-radius: 3px;
+            position: absolute;
+            top: 25px;
+            left: 0;
+        }
+
+        .underline span {
+            width: 15px;
+            height: 100%;
+            background: #fff;
+            border-radius: 3px;
+            position: absolute;
+            top: 0;
+            left: 10px;
+            animation: moving 2s linear infinite;
+        }
+
+        @keyframes moving {
+            0% {
+                left: 20px;
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
+
+        col h3 {
+            width: fit-content;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .item {
+            width: fit-content;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .col-3 img {
+            width: 200%;
+        }
+
+        .container img {
+            width: 500px;
+            height: 55 0px;
+            position: absolute;
+            left: 50%;
+            top: 20%;
+        }
+
+        .glass p {
+            color: #fff;
+        }
+
+        button a {
+            text-decoration: none;
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <div class="logo"><a href="\main.html"><img src="icons/white_logo.svg" alt="logo" id="logo-btn"></a></div>
+            <div class="menu_btn">
+                <div class="line"></div>
+            </div>
+            <div class="side-menu">
+                <ul>
+                    <li><a href="\main.html">Home</a></li>
+                    <li><a href="Mobile.html">Mobile</a></li>
+                    <li><a href="Laptops.html">Laptop</a></li>
+                    <li><a href="Headphone.html">Headphone</a></li>
+                    <li><a href="smart watches.html">Watch</a></li>
+                </ul>
+            </div>
+            <ul>
+                <li><a href="#"><input type="text" placeholder="Search" id="search-box"></a></li>
+                <li><a href="#"><img src="icons/white_search.svg" alt="Search" id="search-btn"></a></li>
+                <li><a href="#"><img src="icons/white_cart.svg" alt="Cart" id="cart-btn"></a></li>
+                <li><a href="login form.html"><img src="icons/white_user.svg" alt="User"></a></li>
+            </ul>
+        </nav>
+        <script src="Catergories navbar.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        </nav>
+
+
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-2">
+                    <div class="glass">
+                        <h1>Listen to music the way you should<br></h1>
+                        <p> Dance your heart out to the beats </p>
+                    </div>
+
+                </div>
+                <div class="col-2">
+
+                    <img src="hp5.webp">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-2">
+        <img src="hp4.webp">
+        <img src="hdp2.webp" alt="">
+    </div>
+
+</body>
+
+<body>
+    <div class="gallery">
+
+        <div class="content">
+            <div class="box">
+                <div class="maincontainer">
+                    <div class="card">
+
+                        <div class="front">
+                            <img src="headphone1.jpg">
+                            <h3>boAt</h3>
+                        </div>
+                        <div class="back">
+                            <p><br><br>
+                            <h4> Headphones with Mic</h4>
+                            </p><br>
+                            <h5> Rs 999.00</h5><br>
+                            <button class="buy-5"><a href="..\Readmore\Headphone\Boat Rockerz 450\boatrockerz450.html">
+                                    Read more</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="maincontainer">
+                <div class="card">
+                    <div class="front">
+                        <img src="headphone2.jfif">
+                        <h3>Reconnect</h3>
+                    </div>
+                    <div class="back">
+                        <p><br><br>
+                        <h4> Ear Wireless Headphone</h4>
+                        </p><br>
+                        <h5>Rs 2,000.00 </h5><br>
+                        <button class="buy-5"><a href="..\Readmore\Headphone\Reconnect Marvel\Reconnect.html"> Read
+                                more</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="maincontainer">
+                <div class="card">
+                    <div class="front">
+                        <img src="headphone3.webp">
+                        <h3>boAt</h3>
+                    </div>
+                    <div class="back">
+                        <p><br><br>
+                        <h4>Bluetooth Earphones</h4>
+                        </p><br>
+                        <h5>Rs 1,996.00</h5><br>
+                        <button class="buy-5"><a href="..\Readmore\Headphone\Boat Rockerz 255\BoatRockerz.html"> Read
+                                more</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="maincontainer">
+                <div class="card">
+                    <div class="front">
+                        <img src="headphone4.webp">
+                        <h3>OnePlus</h3>
+                    </div>
+                    <div class="back">
+                        <p><br><br>
+                        <h4> 30 Hrs Battery Life</h4>
+                        </p><br>
+                        <h5>Rs 1,999.00</h5><br>
+                        <button class="buy-5"><a href="..\Readmore\Headphone\OnePlus Bullets\bullets.html"> Read
+                                more</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="maincontainer">
+                <div class="card">
+                    <div class="front">
+                        <img src="headphone5.jpg">
+                        <h3>Beats Flex</h3>
+                    </div>
+                    <div class="back">
+                        <p><br><br>
+                        <h4> W1 Headphone Chip</h4>
+                        </p><br>
+                        <h5>Rs 1,500.00</h5><br>
+                        <button class="buy-5"><a href="..\Readmore\Headphone\Beats Flex\BeatsFlex.html"> Read
+                                more</a></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="maincontainer">
+                <div class="card">
+                    <div class="front">
+                        <img src="headphone6.webp">
+                        <h3>boAt</h3>
+                    </div>
+                    <div class="back">
+                        <p><br><br>
+                        <h4> Wireless Earbuds </h4>
+                        </p><br>
+                        <h5>Rs 1,112.00</h5><br>
+                        <button class="buy-5"><a href="..\Readmore\Headphone\Boat Airdopes\BoatAirdopes.html"> Read
+                                more</a></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="maincontainer">
+                <div class="card">
+                    <div class="front">
+                        <img src="headphone7.jpg">
+                        <h3>Syska Eargo</h3>
+                    </div>
+                    <div class="back">
+                        <p><br><br>
+                        <h4>Syska Wireless Earpods</h4>
+                        </p><br>
+                        <h5>Rs 2,190.00</h5><br>
+                        <button class="buy-5"><a href="..\Readmore\Headphone\Syska Eargo\SyskaEargo.html"> Read
+                                more</a></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="maincontainer">
+                <div class="card">
+                    <div class="front">
+                        <img src="headphone8.webp">
+                        <h3>iSpares Me </h3>
+                    </div>
+                    <div class="back">
+                        <p><br><br>
+                        <h4> Mini BEAT EARPOD </h4>
+                        </p><br>
+                        <h5>Rs 2,499.00</h5><br>
+                        <button class="buy-5"><a href="..\Readmore\Headphone\Ispares Me\isparesme.html"> Read
+                                more</a></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    <center> <a href="" class="btn"> Go to Top </a></center>
+</body>
+
+</html>

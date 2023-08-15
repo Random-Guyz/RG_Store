@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign up</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0C1012;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .signup-form {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .sign-active {
+            display: block;
+        }
+
+        .signup-form h1 {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid silver;
+            color: white;
+            background-color: #FF0000
+        }
+
+        .signup-form form {
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+
+        form .txt_field {
+            position: relative;
+            border-bottom: 2px solid #adadad;
+            margin: 30px 0;
+        }
+
+        .txt_field input {
+            width: 100%;
+            padding: 0 5px;
+            height: 40px;
+            font-size: 16px;
+            border: none;
+            background: LightSalmon;
+            outline: none;
+        }
+
+        .txt_field label {
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            color: black;
+            transform: translateY(-50%);
+            font-size: 16px;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        input:focus~label,
+        input:valid~label {
+            top: -5px;
+            color: #2691d9;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            height: 50px;
+            border: 1px solid;
+            background: red;
+            border-radius: 25px;
+            font-size: 18px;
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+            outline: none;
+            transition: .8s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: maroon;
+        }
+
+        .login_link {
+            margin: 30px 0;
+            text-align: center;
+            font-size: 16px;
+            color: #666666;
+        }
+
+        .login_link a {
+            color: #2691d9;
+            text-decoration: none;
+        }
+
+        .login_link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signup-form">
+        <h1>Sign up</h1>
+        <form>
+            <div class="txt_field">
+                <input type="email" required>
+                <label>Enter your Email</label>
+            </div>
+            <div class="txt_field">
+                <input type="text" required>
+                <label>Create Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" required>
+                <label>Create Password</label>
+            </div>
+            <div class="txt_field">
+                <input type="chatbox" required>
+                <label>Location</label>
+            </div>
+            <input type="submit" value="Submit" onclick="valid()" id="submit">
+            <div class="login_link">
+                <input type="checkbox" id="agree" name="agree" value="yes">
+                <label for="agree" style="color:Indigo"><i>do you Agree our <a href="Term of use.html"
+                            target="self">terms of Use</a> & <a href="privacy policy.html" target="self">Privacy
+                            Policy</a></i></label><br>
+                Already a User? <a href="login form.html" id="login-btn"><b>Login</b></a><br>
+                <a href="need help.html" id=""><i>need help?</i></a>
+            </div>
+        </form>
+    </div>
+    <script>
+        let btn = document.getElementById('submit');
+        btn.addEventListener('click', () => {
+            alert("Thank you for your time");
+        });
+        function valid() {
+            if (document.getElementById('agree').checked) {
+                alert("Checked");
+            } else {
+                alert("Please Agree our terms&conditions to SUBMIT");
+            }
+        }
+    </script>
+</body>
+
+</html>
