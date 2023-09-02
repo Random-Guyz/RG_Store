@@ -15,7 +15,7 @@ Welcome to the RG Store project, an e-commerce website for electronics enthusias
 - **Contact Us Page**: [Sanket Ram](https://github.com/Cypher95)
 - **Frontend Design**: [Kaif Shariff](https://github.com/Kaif-Shariff)
 - **Footer Design**: Sarthak Humbare
-- **About Us Page**: Mohammed Abbas, Ashish Jadhav
+- **About Us Page**: Nathani Mohammed Abbas, Ashish Jadhav
 - **Login/Registration Page**: Haider Khaminwala
 - **Buy Now Page**: Vinit Sawant
 - **Add to Cart Feature**: Yogesh Jadhav
