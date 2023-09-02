@@ -61,20 +61,6 @@
         width: 20px;
     }
 
-    .side-menu {
-        position: absolute;
-        width: 60%;
-        height: 200vh;
-    }
-
-    .side-menu li a {
-        font-weight: 600;
-        padding: 12px;
-        margin: 40px;
-        border-radius: 8px;
-        color: #fff;
-    }
-
     #search-box {
         outline: none;
         border: none;
@@ -89,6 +75,14 @@
         position: absolute;
         width: 60%;
         height: 200vh;
+        background-color: black;
+    }
+
+    .side-menu li a {
+        font-weight: 600;
+        padding: 12px;
+        margin: 40px;
+        color: #fff;
     }
 
     .side-atv {
@@ -108,7 +102,7 @@
         text-align: center;
         cursor: pointer;
         font-size: 3.5em;
-        margin-top: 30px;
+        margin-top: 20px;
         border-bottom: 4px solid #fff;
         width: 100%;
     }
@@ -172,6 +166,10 @@
         height: 110px;
     }
 
+    .laptop {
+        margin-top: 5px;
+    }
+
     .watch img {
         margin: -15px 0px 0px 18px;
         width: 95px;
@@ -182,6 +180,10 @@
         margin: -30px 0px 0px 10px;
         width: 105px;
         height: 120px;
+    }
+
+    .headphone {
+        margin-top: 5px;
     }
 
     .category:hover img {
@@ -323,5 +325,22 @@
         left: 18%;
     }
 
+    .foot-section {
+        position: relative;
+        margin-top: 580%;
+        width: 100%;
+        color: #fff;
+        font-size: 13px;
+        line-height: 20px;
+    }
 
+    .website-links li {
+        margin-right: 5px;
+
+    }
+
+    .item {
+        width: 300%;
+        text-align: justify;
+    }
 }
