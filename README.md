@@ -5,7 +5,7 @@ Welcome to the RG Store project, an e-commerce website for electronics enthusias
 ## Project Overview
 
 - **Project Name**: RG Store
-- **Brand Name**: RG Store
+- **BCategory**: E-Commerce Website
 - **Project Type**: College Project
 
 ## Team Members
