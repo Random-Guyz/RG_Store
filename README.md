@@ -33,3 +33,6 @@ RG Store, is an e-commerce website specializing in electronics. Our team collabo
 - Buy Now page with user details for product purchase.
 - Add to Cart feature for easy shopping.
 - Distinct product pages with images, descriptions, and specifications.
+
+
+*This Project have no backend*
