@@ -23,7 +23,7 @@ Welcome to the RG Store project, an e-commerce website for electronics enthusias
 
 ## Project Description
 
-This college project, RG Store, is an e-commerce website specializing in electronics. Our team collaborated to create a fully functional website with the following features:
+RG Store, is an e-commerce website specializing in electronics. Our team collaborated to create a fully functional website with the following features:
 
 - Custom logos designed for the website.
 - Frontend design implemented using Figma.
